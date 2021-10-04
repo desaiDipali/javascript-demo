@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+</head>
+<body>
+	<script type="text/javascript">
+		 //1. write a program to do addition of first 8 numbers
+		 let sum =0;
+		 for(i=0;i<=8;i++){
+
+		 	sum += i;
+		 }
+		 document.write("1. Addition of first 8 numbers is = "+ sum);
+
+		 // 2. write a program to print first 10 odd numbers
+		 // 3. write a program to find sum of first 10 odd numbers
+
+
+		 let arr = Array(1,2);
+		 let odd_no ='';
+		 let sum_of_odd = 0;
+		 function odd(){
+		 	for(j=0;j<=arguments[0] *2;j++){
+		 		if(j%2 !=0){
+		 			odd_no +=j +" ";
+		 			sum_of_odd += j;
+
+		 		}
+		 	}
+		 }
+		 odd(10);
+		 document.write("<br> 2. First 10 odd numbers is = " +odd_no);
+		 document.write("<br> 3. Sum of first 10 odd numbers is = " +sum_of_odd);
+
+		 //4. write a program to print first 10 numbers of fibanocci series. 
+		  let no1 =0;
+		  let no2=1;
+		 // let sum = 0;
+		  document.write("<br> 4. First 10 numbers of fibanocci series is ="+ no2);
+		   function fibanocci(a){
+		   		for(k=0;k<a;k++){
+		   			sum = no1+no2;
+				   	document.write("<br>"+no1+"+"+no2+"="+sum);
+				   	no1=no2;
+				   	no2=sum;
+		   		}
+		   
+		   }
+
+		   fibanocci(10);
+
+		   //6) write a program to find the addition of squares of first 5 numbers
+		   document.write("<br> 5. Addition of squares of first 5 numbers is");
+		   let squares_sum =0;
+			for(i=1;i<=5;i++){
+				no_squre = i*i;
+				squares_sum +=no_squre;
+				document.write("<br>"+i+"="+no_squre +" sum ="+ squares_sum);
+			}
+
+			//7) write a program to find the squares of first 5 even numbers.
+			let count = 0;
+			let i_even = 1;
+			document.write("<br> 6. Squares of first 5 even numbers");
+			while(i_even) {
+				if(i_even%2 == 0){
+					
+					count++;
+					let i_even_square = i_even*i_even;
+					document.write("<br>"+i_even+" = "+i_even_square);
+				}
+				if(count == 5){
+					break;
+				}
+				i_even++;
+			}
+
+	</script>
+
+</body>
+</html>
